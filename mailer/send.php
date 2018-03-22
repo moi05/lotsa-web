@@ -16,7 +16,7 @@ try {
 	$email				=	strtolower($_POST['email']);
 	$consulta			=	htmlentities($_POST['consulta']);
 	$telefono			=	htmlentities($_POST['telefono']);
-	$direccion_envio	=	'info@lotsa.com.ar';//   Direccion de correo electronico de destino
+	$direccion_envio	=	'hola@lotsa.com.ar';//   Direccion de correo electronico de destino
 	$name				=	$nombre;
 	$subject			=	"Consulta desde Sitio web";
 
@@ -28,12 +28,12 @@ try {
 
 	/** COMPLETAR ESTOS DATOS ***/
 
-	$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
-	$mail->Username = '';                 				  // SMTP username
-	$mail->Password = 'secret';                           // SMTP password
+	$mail->Host = 'mail.lotsa.com.ar';  // Specify main and backup SMTP servers
+	$mail->Username = 'hola@lotsa.com.ar';                 				  // SMTP username
+	$mail->Password = 'Hhhh2018';                           // SMTP password
 
-	$mail->setFrom('from@example.com', 'Mailer');
-	$mail->addReplyTo('info@example.com', 'Information');
+	$mail->setFrom('hola@lotsa.com.ar', 'Mailer');
+	$mail->addReplyTo('hola@lotsa.com.ar', 'Information');
 
 	/***************************************************/
 
