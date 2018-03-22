@@ -1,0 +1,1365 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../fonts/lato-semibold-webfont.eot');
+    src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-semibold-webfont.woff') format('woff'),
+         url('../fonts/lato-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cardoregular';
+    src: url('../fonts/cardo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cardo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------------colors-----------------------------------------*/
+$white: #fff;
+
+$primary-color: #ec0e07;
+
+$bkg-gray: #e8e8e8;
+
+$bkg-gray-dark:#666666;
+
+$bkg-gray-medium:#ECEFF1;
+/*---------------------general------------------------------------*/
+body{
+  font-size: 16px;     
+}
+
+li{
+  list-style: none;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3,h2,h1,h4,label {
+  font-family: 'latosemibold', sans-serif;
+  font-weight:300;
+  letter-spacing: 1px;
+  font-style: normal;  
+}
+p, li{
+  font-family: 'latoregular';
+}
+
+.row{
+  margin-right: 0 !important;
+  /*margin-left: 0 !important;*/
+}
+
+.no-padding-right{
+  padding-right: 0 !important;
+}
+
+.no-padding{
+  padding-right: 0 !important;
+  padding-left: 0 !important
+}
+/*-------------------------line-----------------------------*/
+.line h2:after { 
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto 25px auto;
+  background-color:$primary-color;
+}
+
+/*----------------------extends-----------------------------*/
+.values{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 278px;
+}
+.text-values{
+  max-width: 75%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+/*---------------------navbar-------------------------------*/
+.navbar{
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: white;
+  .navbar-nav>li>a{
+    color:$primary-color;
+    font-family: 'latoregular';
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+  } 
+  &:hover{
+    color: #4e5656;    
+  }
+}
+
+ul.nav.navbar-nav.navbar-right.navbar-effect {
+  padding-top: 28px;
+}
+
+/*------------------------banner-------------------------*/
+
+.wrap-banner{
+  padding-right: 0px;
+  padding-left: 0px;
+  .presentation{
+    background-image: url("../img/lotsa-banner-8.png");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #202020;
+    height: 550px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+}
+
+.title{  
+  white-space: nowrap;  
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  padding-left: 71px;
+  padding-top: 117px;
+  border-width: 0px;
+  margin: 0px;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  font-family: cardoregular;
+  font-size: 75px;
+}
+
+.subtitle-banner{
+  font-family: cardoregular;
+  font-size: 45px;
+  text-align: left;
+  color: white;
+}
+
+.title-copy{
+  font-family: cardoregular;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 80px;
+  color: white;
+}
+
+/*---------------------values----------------------*/
+.mod-1{
+  background-color: #515151;
+  @extend .values;
+}
+
+.mod-2{
+  background-color: $bkg-gray-dark;
+  @extend .values;
+}
+
+.mod-3{
+  background-color:#c6c6c6;
+  @extend .values;
+}
+
+.mod-4{
+  background-color: #dadada;
+  @extend .values;
+}
+
+.t-w{
+  color: white;
+}
+
+.text-value-1{
+  color: white;
+  @extend .text-values;
+}
+.text-value-2{  
+  color: #666;
+  @extend .text-values;
+}
+
+/*---------------------aboutus--------------------*/
+
+.about-preview {
+  background-color: #ECEFF1;
+  height: 100%;
+  h2{
+    padding-top: 18rem;
+  }
+  p{
+    font-family: 'latoregular';
+    padding-bottom: 2rem;   
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.subtitle-aboutus{
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.about-preview a{
+  font-family: 'latoregular';
+}
+
+.row .about-preview{
+  padding-right: 0;
+  padding-right: 0;
+}
+
+.title-aboutus{
+  font-size: 110px;
+  line-height: 80%!important;
+  font-weight: 400!important; 
+  color: #505050;
+}
+
+/*--------------button readmore----------------*/
+  
+.btn-list{
+  padding-top: 10px;    
+}
+.btn{
+  width: 150px;
+  height: 40px;
+  border-color:#999;
+  color:#333;
+  background: $bkg-gray;
+  border-radius: 3px;  
+  line-height: 1.42857143; 
+}
+
+.btn:hover{
+  background:#333;  
+  color: white;
+  transition: all .4s ease-in-out;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #333;
+}
+.btn-default {
+  color: #205a9c;
+  border: 1px solid #999;
+}
+/*--------------------services------------------*/
+
+.ny-background{ 
+  padding-bottom: 95px;
+  background-image: url(../img/ny-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #202020;
+  background-attachment: fixed;
+  width: 100%;
+}
+.wrapper{
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+  margin-top: 26px;
+}
+
+.wrap-service{
+  background-color: white;
+  padding: 15px 10px 31px 20px;
+  border-radius: 2px             
+}
+
+.wrap-service-medium{
+  background-color: white;
+  padding: 15px 10px 54px 20px;
+  border-radius: 2px             
+}
+
+.wrap-service-large{
+  background-color: white;
+  padding: 9px 10px 10px 20px;
+  border-radius: 2px  
+}
+
+/*-----------------structure---------------------*/
+.list-color{
+  color:$primary-color;
+}
+.wrap-structure{
+  max-width: 500px;
+  padding-top: 50px;
+}
+.wrap-structure li{
+  padding-bottom: 10px;
+}
+
+/*----------------------clients-----------------*/
+.wrap-clients{
+  text-align: center;
+  .subtitle{
+    font-size: 2rem;    
+    text-transform: uppercase;
+    >span{
+      color: $primary-color;
+    }
+  }
+  .wrap-logo{ 
+    margin: 15px auto; 
+    padding: 0 15px;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+  }
+}
+/*----------------------form----------------------*/
+label{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $white; 
+  padding-left: 0px !important;
+}
+
+.btn-send{
+  background-color:$primary-color;  
+}
+
+.btn-send:hover{
+  background-color: #34699A !important;
+}
+.row-centered{
+  text-align: center;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+  text-align:left;
+  margin-right:-4px;    
+}
+
+.copy-form{
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  text-align: center;
+  max-width: 58%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.title-color{
+  color:$primary-color;
+  padding-top: 100px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.bkg-form-location{ 
+  background-color:#ECEFF1;
+  ul{
+    max-width: 80%;
+    margin: 0 auto;  
+    height: 300px;
+    line-height: 44px;
+  }  
+  li{
+    border-bottom: 1px solid rgba(95, 95, 95, 0.19);
+  }
+  i{
+    padding-right: 30px;
+    color: $primary-color;
+  }
+}
+
+.wrap-form{
+  background-color: $bkg-gray-dark;
+}
+
+.control-label {
+  color: white;
+  text-align: right;
+  font-family: 'latoregular';;
+}
+.sutitle-form{
+  color: white;
+  margin-left: 18px;
+}
+.title-light{
+  color: white;
+}
+
+.wrap-input{
+  padding-top: 8px;
+  padding-bottom: 27px;
+}
+ 
+textarea.form-control {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}  
+
+
+/*------------------footer-----------------------*/
+
+.bkg-footer{
+  background-color:$primary-color;
+  padding-right: 0;
+  padding-left: 0;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+ul.list-unstyled.list-inline {
+  line-height: 70px;
+}
+
+ul.list-unstyled.list-inline a{
+ color: white;
+ text-decoration: none;
+} 
+.link{
+  color: white;
+  font-family: 'latoregular';
+  &:hover{
+    color:white;
+  }
+}
+.wrap-copy{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.border-wrap{
+  border-bottom:1px solid #dcdcdc;
+  padding-bottom: 31px;
+}
+
+#section-4{
+  border-top:1px solid #dcdcdc;
+}
+
+.fa-angle-up{
+  cursor: pointer;
+  color: white;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 18px;
+  top: 13px;
+  font-size: 2rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: $primary-color;
+  color: black;
+}
+
+#return-to-top:hover i {
+  color: white;
+  top: 5px;
+}
+
+
+
+/*------------------media queries----------------------*/
+
+
+
+
+$media-queries: true;
+
+@mixin bp($point) {
+  @if ($media-queries) {
+    $bp-large-screen: 1824px;
+    $bp-bigscreen: 1824px;
+    $bp-ipad-max: 1024px;
+    $bp-ipad-min: 768px;
+    $bp-iphone5-max: 568px;
+    $bp-iphone-max: 480px;
+    $bp-iphone-min: 320px;
+    // **
+    // --------------------
+    // Options of screen breakpoints:
+    // 1. large-screen - from 1824px
+    // 2. big-screen - to 1824px
+    // 3. ipad-mini - to 758px
+    // 4. ipad - from 758px to 1024px
+    // 5. ipad-portrait - to 758px
+    // 6. iphone5-landscape - to 568px
+    // 7. iphone - from 320px to 480px
+    // 8. iphone-portrait - to 320px
+    // --------------------
+    // **
+    @if $point == large-screen {
+      @media // Very Large Screens
+      only screen and (min-width: #{$bp-large-screen}),
+      only screen and (min-device-width: #{$bp-large-screen}) {
+        @content;
+      }
+    }
+    @if $point == big-screen {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-bigscreen}),
+      only screen and (max-device-width: #{$bp-bigscreen}) {
+        @content;
+      }
+    }
+    @if $point == ipad-mini {
+      @media // iPad-Mini (portrait and landscape)
+      handheld,
+      only screen and (min-device-pixel-ratio: 1),
+      only screen and (max-width: #{$bp-ipad-min}){
+        @content;
+      }
+    }
+    @if $point == ipad {
+      @media // iPad (portrait and landscape)
+      handheld,
+      only screen and (max-width: #{$bp-ipad-max})
+                  and (min-width: #{$bp-iphone5-max}) {
+        @content;
+      }
+    }
+    @if $point == ipad-portrait {
+      @media // iPad (portrait)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-ipad-min})
+                  and (orientation: portrait) {
+        @content;
+      }
+    }
+    @if $point == iphone5-landscape {
+      @media // iPhone 5 (landscape)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-iphone5-max}) {
+        @content;
+      }
+    }
+    @if $point == iphone {
+      @media // iPhone (portrait and landscape)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-iphone-max})
+                  and (min-width: #{$bp-iphone-min}) {
+        @content;
+      }
+    }
+    @if $point == iphone-portrait {
+      @media // iPhone (portrait)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-iphone-min}) {
+        @content;
+      }
+    }
+  }
+}
+
+
+
+img.hidden-md.hidden-sm.hidden-lg {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    padding-left: 21px;
+    padding-top: 10px;
+  }
+  @include bp(iphone) {
+    padding-left: 21px;
+    padding-top: 10px;   
+  }
+  @include bp(iphone-portrait) {
+    padding-left: 21px;
+    padding-top: 10px;
+  } 
+}
+
+.row {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  @include bp(iphone) {
+    margin-left: 0 !important; 
+    margin-right: 0 !important; 
+  }
+  @include bp(iphone-portrait) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  } 
+}
+
+.subtitle-banner {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    font-size: 21px;
+  }
+  @include bp(iphone) {
+    font-size: 21px;
+  }
+  @include bp(iphone-portrait) {
+    font-size: 21px;
+  } 
+}
+
+.title {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+        padding-top: 152px;
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    font-size: 35px;
+    padding-left: 40px
+  }
+  @include bp(iphone) {
+    font-size: 35px;
+    padding-left: 40px
+  }
+  @include bp(iphone-portrait) {
+    font-size: 35px;
+    padding-left: 40px
+  } 
+}
+
+.wrap-logo img {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    width: 60%;
+  }
+  @include bp(iphone) {
+    width: 60%;
+  }
+  @include bp(iphone-portrait) {
+    width: 60%;
+  } 
+}
+
+.wrap-form {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+   
+    padding-left: 0;
+  }
+  @include bp(iphone) {
+   
+    padding-left: 0;
+  }
+  @include bp(iphone-portrait) {
+    padding-right: 0;
+    padding-left: 0;
+  } 
+}
+
+.wrap-input {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  @include bp(iphone) {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  @include bp(iphone-portrait) {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  } 
+}
+
+.about-preview h2  {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    padding-top: 48px;
+  }
+  @include bp(ipad) {
+    padding-top: 0;
+  }
+  @include bp(ipad-portrait) {
+    padding-top: 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding-top: 0;
+  }
+  @include bp(iphone) {
+    padding-top: 0;
+  }
+  @include bp(iphone-portrait) {
+    padding-top: 0;
+  } 
+}
+
+.about-preview p  {
+  @include bp(ipad) {
+    font-size: 1.4rem;
+    padding-bottom: 21px;
+  }
+}
+.wrap-service  {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding: 0 0 23px 0;
+  }
+  @include bp(ipad-portrait) {
+    padding: 15px 0 47px 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding: 5px 10px 54px 20px;
+  }
+  @include bp(iphone) {
+    padding: 5px 10px 54px 20px;
+  }
+  @include bp(iphone-portrait) {
+    padding: 5px 10px 54px 20px;
+  } 
+}
+
+.container>.navbar-header {
+  @include bp(ipad) {
+    margin-left: -0; 
+    margin-bottom: 5px;
+  }
+}
+
+
+.wrap-service-medium {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding: 0 0 23px 0;
+  }
+  @include bp(ipad-portrait) {
+    padding: 15px 0 47px 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding: 1px 10px 64px 20px;
+  }
+  @include bp(iphone) {
+    padding: 1px 10px 64px 20px;
+  }
+  @include bp(iphone-portrait) {
+    padding: 1px 10px 64px 20px;
+  } 
+}
+
+.wrap-service-large {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding: 0;
+  }
+  @include bp(ipad-portrait) {
+    padding: 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding: 30px 10px 64px 20px;
+  }
+  @include bp(iphone) {
+    padding: 30px 10px 64px 20px;
+  }
+  @include bp(iphone-portrait) {
+    padding: 30px 10px 64px 20px;
+  } 
+}
+ 
+.wrap-service-medium ul, .wrap-service ul, .wrap-service-large ul{
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    padding-left: 10px;
+  }
+  @include bp(iphone) {
+    padding-left: 10px;
+  }
+  @include bp(iphone-portrait) {
+    padding-left: 10px;
+  } 
+}
+.wrap-service-large{
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding: 0;
+  }
+  @include bp(ipad-portrait) {
+    padding: 15px 0 47px 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding: 5px 2px 64px 5px;
+  }
+  @include bp(iphone) {
+    padding: 5px 2px 64px 5px;
+  }
+  @include bp(iphone-portrait) {
+    padding: 5px 2px 64px 5px;
+  } 
+}
+
+.wrap-service-large ul li{
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    font-size: 1.4rem;
+  }
+  @include bp(iphone) {
+    font-size: 1.4rem;
+  }
+  @include bp(iphone-portrait) {
+    font-size: 1.4rem;
+  } 
+}
+
+img[alt="Consultoria"], img[alt="Estructura Operativa Nacional"], img[alt="Transporte y logística Nacional e Internacional"] {
+  @include bp(ipad) {
+    height: 37vh;
+    width: 102vw;
+  }
+}
+.sutitle-form{
+  @include bp(ipad) {
+    margin-left: 59px;
+  }    
+}
+
+.wrap-service-large-img{
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    height: 50vh;
+    width: 102vw;
+  }
+  @include bp(ipad-portrait) {
+    height: 27vh;    
+    width: 102vw;
+  }
+  @include bp(iphone5-landscape) {
+   
+  }
+  @include bp(iphone) {
+ 
+  }
+  @include bp(iphone-portrait) {
+    
+  } 
+} 
+
+#section-2 {
+  @include bp(ipad) {
+    padding-left: 25px;
+  }    
+}
+
+.bkg-form-location ul {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    line-height: 37px;
+    height: 231px;
+  }
+  @include bp(iphone) {
+    line-height: 37px;
+    height: 231px;
+  }
+  @include bp(iphone-portrait) {
+    line-height: 37px;
+    height: 231px;
+  } 
+}
+
+.title-color{
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding-top: 49px;
+    padding-bottom: 5px;
+  }
+  @include bp(ipad-portrait) {
+    padding-top: 49px;
+    padding-bottom: 5px;
+  }
+  @include bp(iphone5-landscape) {
+    padding-top:45px;
+  }
+  @include bp(iphone) {
+    padding-top:45px;
+  }
+  @include bp(iphone-portrait) {
+    padding-top:45px;
+  } 
+}
+
+.ny-background {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    padding-bottom: 41px;
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    padding-bottom: 34px;
+  }
+  @include bp(iphone) {
+    padding-bottom: 34px;
+  }
+  @include bp(iphone-portrait) {
+    padding-bottom: 34px;
+  }     
+}
+
+textarea.form-control {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    margin-bottom: 18px;
+    margin-top: 3px;
+  }
+  @include bp(iphone) {
+    margin-bottom: 18px;
+    margin-top: 3px;
+  }
+  @include bp(iphone-portrait) {
+    margin-bottom: 18px;
+    margin-top: 3px;
+  } 
+}
+
+.text-values, .text-value-1, .text-value-2 { 
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    max-width: 100%;
+  }
+  @include bp(ipad) {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+  @include bp(ipad-portrait) {
+    max-width: 90%;
+    font-size: 1.4rem;
+  }
+  @include bp(iphone5-landscape) {
+  
+  }
+  @include bp(iphone) {
+    
+  }
+  @include bp(iphone-portrait) {
+    
+  } 
+}
+
+    
+.wrap-btn-send {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    padding-right: 0px;
+  }
+  @include bp(ipad) {
+    padding-right: 0px;
+    margin-bottom: 19px;
+  }
+  @include bp(ipad-portrait) {
+    padding-right: 80px;
+    margin-bottom: 19px;
+  }
+  @include bp(ipad-mini) {
+    padding-right: 10px;
+  }
+  @include bp(iphone5-landscape) {
+  
+  }
+  @include bp(iphone) {
+    
+  }
+  @include bp(iphone-portrait) {
+    
+  } 
+}
+
+
+.btn-list {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+  @include bp(ipad) {
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+  @include bp(ipad-portrait) {
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+  @include bp(iphone5-landscape) {
+  
+  }
+  @include bp(iphone) {
+    
+  }
+  @include bp(iphone-portrait) {
+    
+  }     
+}
+
+
+
+.title-copy {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    
+  }
+  @include bp(ipad) {
+   
+  }
+  @include bp(ipad-portrait) {
+    
+  }
+  @include bp(iphone5-landscape) {
+    padding-left: 40px;
+  }
+  @include bp(iphone) {
+    padding-left: 40px;
+  }
+  @include bp(iphone-portrait) {
+    padding-left: 40px;
+  }     
+}
+
+
+.wrap-service  {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+   
+  }
+  @include bp(ipad) {
+    padding: 0 0 23px 0;
+  }
+  @include bp(ipad-portrait) {
+    padding: 15px 0 47px 0;
+  }
+  @include bp(iphone5-landscape) {
+    padding: 5px 10px 54px 20px;
+  }
+  @include bp(iphone) {
+    padding: 5px 10px 54px 20px;
+  }
+  @include bp(iphone-portrait) {
+    padding: 5px 10px 54px 20px;
+  } 
+}
+
+.about-preview p  {
+  @include bp(ipad) {
+    font-size: 1.6rem;
+    padding-bottom: 21px;
+  }
+}
+
+
+h3 {
+  @include bp(large-screen) {
+  
+  }
+  @include bp(big-screen) {
+    font-size: 20px;
+  }
+  @include bp(ipad) {
+    font-size: 20px;
+  }
+  @include bp(ipad-portrait) {
+    font-size: 20px;
+  }
+  @include bp(iphone5-landscape) {
+  
+  }
+  @include bp(iphone) {
+    
+  }
+  @include bp(iphone-portrait) {
+    
+  }     
+}
+
+.wrap-structure{
+  @include bp(ipad) {
+    max-width: 100%;
+  }
+}
+.subtitle-aboutus{
+  @include bp(ipad) {    
+    padding-bottom: 14px;
+  }
+}
+
+.bkg-form-location ul{
+  @include bp(ipad-portrait) {    
+    height: 183px;
+    max-width: 100%;
+  }
+}
+
+.wrap-form>.row{
+  @include bp(ipad) {   
+    margin-right: -15px !important;
+    margin-left: -15px;
+  }
+  @include bp(ipad-portrait) {   
+    margin-right: -15px !important;
+    margin-left: -15px;
+  }    
+}
+
+ul.nav.navbar-nav.navbar-right.navbar-effect {
+  @include bp(ipad) {   
+    
+  }   
+  @include bp(ipad-portrait) {   
+    padding-right: 88px;
+  }   
+}
+  
+  
+   
