@@ -71,8 +71,9 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 /*----------------------------- send e-mail -----------------------------*/
 
 $(document).ready(function() {
-    
-    $( "#signupForm" ).validate({
+   owlCarousel();
+ 
+    $("#signupForm").validate({
         rules: {
             'inputname': "required",
             'inputemail': "required email",
@@ -84,30 +85,23 @@ $(document).ready(function() {
             inputemail: "Por favor, ingresá tu E-mail",
             inputmessage: "Por favor, ingresá tu consulta"
         },
-
-       
-        submitHandler: function (form) {
-
+        submitHandler: function(form) {
             var data = {
                 nombre: $("#inputname").val(),
                 telefono: $("#inputphone").val(),
-                email:$("#inputemail").val(),
-                consulta:$("#inputmessage").val()
+                email: $("#inputemail").val(),
+                consulta: $("#inputmessage").val()
             };
-
             $.ajax({
                 type: "POST",
                 cache: false,
-                url:"mailer/send.php",
+                url: "mailer/contacto.php",
                 data: data,
                 success: function(resp) {
-console.log(resp);
-                    resp  = $.parseJSON(resp);
-console.log(resp);
-                    if(resp[0]) {
-                      swal("Mensaje Enviado!", "En breve, te responderemos. Gracias!", "success");
-                      $('#signupForm').get(0).reset();
-                          
+                  
+                    if (resp[0]) {
+                        swal("Mensaje Enviado!", "En breve, te responderemos. Gracias!", "success");
+                        $('#signupForm').get(0).reset();
                     } else {
                         swal({
                             title: "Mensaje no enviado",
@@ -116,15 +110,30 @@ console.log(resp);
                             closeOnConfirm: false,
                             showLoaderOnConfirm: true
                         });
-                        
-
                     }
-
                 }
-
-
-
             });
         }
     });
 });
+
+/*-----------------------------owl-----------------------------*/
+
+
+  function owlCarousel(){
+
+    $(".owl-banner").owlCarousel({ 
+      nav : true, // Show next and prev buttons 
+      dots: false,
+        slideSpeed : 50,
+        paginationSpeed : 400,
+        responsiveClass:true,
+        navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        //autoplayTimeout:500,
+        autoplayHoverPause:true
+     });
+  }

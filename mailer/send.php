@@ -22,11 +22,16 @@ try {
 
 
 	//Server settings
-	$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+	$mail->SMTPDebug = 2;                               // Enable verbose debug output
 	$mail->isSMTP();                                      // Set mailer to use SMTP
 
 
 	/** COMPLETAR ESTOS DATOS ***/
+
+	$mail->Host = $smtpHost; 
+	$mail->Username = $smtpUsuario; 
+	$mail->Password = $smtpClave;
+
 
 	$mail->Host = 'mail.lotsa.com.ar';  // Specify main and backup SMTP servers
 	$mail->Username = 'hola@lotsa.com.ar';                 				  // SMTP username
@@ -35,12 +40,20 @@ try {
 	$mail->setFrom('hola@lotsa.com.ar', 'Mailer');
 	$mail->addReplyTo('hola@lotsa.com.ar', 'Information');
 
+	$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+
 	/***************************************************/
 
 	
 
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->SMTPSecure = 'tls';                           // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 
 	//Recipients
@@ -74,5 +87,5 @@ try {
 	print json_encode([true]);
 
 } catch (Exception $e) {
-	echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+	echo 'El mensaje no puedo ser enviado. Intente nuevamente. Mailer Error: ', $mail->ErrorInfo;
 }

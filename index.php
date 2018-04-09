@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>  
   <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">  
@@ -16,15 +17,30 @@
   <script type="text/javascript" src="js/sweetalert.min.js"></script> 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115378664-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115378664-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-115378664-1');
-</script>
-
+    gtag('config', 'UA-115378664-1');
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '173503820019106');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=173503820019106&ev=PageView&noscript=1"/></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
   <body>
     <header id="top"> 
@@ -186,6 +202,22 @@
          </div>  
         </div>  
       </div>
+    </section>
+     <!--special service-->
+    <section id="section-4" class="line">    
+        <div class="border-wrap">
+        <div class="row  wrap-service-special">         
+          <div class="col-md-6 wrap-service-special-info">
+           <h2 class="text-center line">Clasificación Arancelaria</h2>   
+            <p class="wrap-copy">Con el objetivo de ofrecer una servicio adicional a nuestros clientes, organizamos un Centro de Clasificación Arancelaria. Con el objetivo
+            de hacer más dinámico su trabajo diario, y dar soluciones que faciliten sus procesos aduaneros. </p> 
+            <div class="btn-list"><a href="http://donpixeldesign.com/lotsa-web/clasificacion-arancelaria.php" class="center-block btn">Más información</a></div>
+          </div>               
+          <div class="col-md-6">
+            <img src="img/clasificacion-arancelaria-1.jpg" class="img-responsive center-block">
+          </div>
+        </div> 
+      </div>   
     </section>
     <!--structure-->
     <section id="section-4" class="line">    
