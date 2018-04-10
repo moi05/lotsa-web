@@ -211,7 +211,7 @@
            <h2 class="text-center line">Clasificación Arancelaria</h2>   
             <p class="wrap-copy">Con el objetivo de ofrecer una servicio adicional a nuestros clientes, organizamos un Centro de Clasificación Arancelaria. Con el objetivo
             de hacer más dinámico su trabajo diario, y dar soluciones que faciliten sus procesos aduaneros. </p> 
-            <div class="btn-list"><a href="http://donpixeldesign.com/lotsa-web/clasificacion-arancelaria.php" class="center-block btn">Más información</a></div>
+            <div class="btn-list"><a href="http://lotsa.com.ar/clasificacion-arancelaria.php" class="center-block btn" target="_blank">Más información</a></div>
           </div>               
           <div class="col-md-6">
             <img src="img/clasificacion-arancelaria-1.jpg" class="img-responsive center-block">

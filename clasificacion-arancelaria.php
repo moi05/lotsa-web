@@ -103,9 +103,6 @@
       </div>
     </section>
     
-   
-
-    
     <!--form-->
     <section id="section-6" class="line">
       <div class="col-md-12 wrap-form">          
